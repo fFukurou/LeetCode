@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\387_First_Unique_Character_in_a_String\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A588C309-88FF-4F5A-BFAD-3468947C3035}|387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.vcxproj|C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A588C309-88FF-4F5A-BFAD-3468947C3035}|387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.vcxproj|solutionrelative:387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "387_First_Unique_Character_in_a_String.cpp",
+              "DocumentMoniker": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp",
+              "RelativeDocumentMoniker": "387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp",
+              "ToolTip": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp",
+              "RelativeToolTip": "387_First_Unique_Character_in_a_String\\387_First_Unique_Character_in_a_String.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-22T16:20:29.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

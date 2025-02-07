@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\2769_Find_the_Maximum_Achievable_Number\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55961E92-DE9A-4FD4-83C5-F590CFEDD268}|2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.vcxproj|C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{55961E92-DE9A-4FD4-83C5-F590CFEDD268}|2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.vcxproj|solutionrelative:2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "2769_Find_the_Maximum_Achievable_Number.cpp",
+              "DocumentMoniker": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp",
+              "RelativeDocumentMoniker": "2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp",
+              "ToolTip": "C:\\Users\\supev\\Documents\\EOQ\\Coding\\LeetCode\\Logic\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp",
+              "RelativeToolTip": "2769_Find_the_Maximum_Achievable_Number\\2769_Find_the_Maximum_Achievable_Number.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-22T16:22:07.239Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

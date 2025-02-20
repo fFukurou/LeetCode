@@ -5,7 +5,7 @@
 ### O(n) --> 'n' is the number of operations --> Constant
 - Is proportional and linear
 
-![alt text](image.png)
+![alt text](00_Concepts\imgs\image.png)
 
 - Drop constants: It doesn't matter if it's 2n or 3n, simplify if to O(n)
 
@@ -45,9 +45,9 @@
 
 
 # POINTERS
- ![alt text](image-1.png)
+ ![alt text](00_Concepts\imgs\image-1.png)
 
- ![alt text](image-2.png)
+ ![alt text](00_Concepts\imgs\image-2.png)
 
  ### Integers and Dictionaries work differently
  ## When changing an int variable, it points to another memory location, because integers are imutable

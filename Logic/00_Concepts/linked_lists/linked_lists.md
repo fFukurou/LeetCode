@@ -2,9 +2,9 @@
 
 ## Do not have indexes, and are spread all over the place, as opposed to a normal list
 
-![alt text](image-3.png)
+![alt text](00_Concepts\imgs\image-3.png)
 
-![alt text](image-4.png)
+![alt text](00_Concepts\imgs\image-4.png)
 
 
 ## BIG O
@@ -23,8 +23,8 @@
 - Reverse: 
 
 ## CHART:
-![alt text](image-5.png)
+![alt text](00_Concepts\imgs\image-5.png)
 
 ## Under the Hood:
-![alt text](image-6.png)
+![alt text](00_Concepts\imgs\image-6.png)
 

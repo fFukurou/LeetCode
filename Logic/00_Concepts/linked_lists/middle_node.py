@@ -51,6 +51,6 @@ print( my_linked_list.find_middle_node().value )
 """
     EXPECTED OUTPUT:
     ----------------
-    3
+    4
     
 """

@@ -48,7 +48,6 @@ class LinkedList:
             node_to_move.next = previous_node.next
             previous_node.next = node_to_move
             
-        
         self.head = dummy.next
         
          

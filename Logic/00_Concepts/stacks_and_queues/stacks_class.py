@@ -49,9 +49,6 @@ my_stack = Stack(1)
 
 my_stack.push(2)
 my_stack.push(3)
-my_stack.pop()
-my_stack.pop()
-my_stack.pop()
 my_stack.push(2)
 
 

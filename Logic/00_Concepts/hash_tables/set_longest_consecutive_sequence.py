@@ -1,5 +1,5 @@
 # WRITE LONGEST_CONSECUTIVE_SEQUENCE FUNCTION HERE #
-def longest_consecutive_sequence(nums):
+def longest_consecutive_sequence(nums): # -> O(n)
     # Create a set to keep track of the numbers in the array
     num_set = set(nums)
     longest_sequence = 0

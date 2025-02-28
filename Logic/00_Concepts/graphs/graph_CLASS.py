@@ -38,33 +38,12 @@ class Graph:
     def remove_vertex(self, vertex): # --> O(|V| + |E|) 
         if vertex in self.adj_list.keys():
             for other_vertex in self.adj_list[vertex]:
-                self.remove_edge(vertex, other_vertex)
-            self.adj_list.pop(vertex)
+                self.adj_list[other_vertex].remove(vertex)
+            del self.adj_list[vertex]
             return True
         return False
-        
-        # if vertex in self.adj_list.keys():
-        #     for other_vertex in self.adj_list[vertex]:
-        #         self.adj_list[other_vertex].remove(vertex)
-        #     del self.adj_list[vertex]
-        #     return True
-        # return False
             
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
 my_graph = Graph()
 my_graph.add_vertex('A')
 my_graph.add_vertex('B')

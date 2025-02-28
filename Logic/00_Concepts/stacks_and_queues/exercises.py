@@ -42,10 +42,12 @@ def sort_stack(input_stack: Stack):
             
         rev_stack.push(temp)
         
-    
-    while not rev_stack.is_empty():
+    while rev_stack.is_empty() == False:
         input_stack.push(rev_stack.pop())
     
+    
+##########################################
+
 
 
 

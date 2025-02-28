@@ -31,34 +31,34 @@ class DoublyLinkedList:
         return True
 
     # WRITE IS_PALINDROME METHOD HERE #
-def is_palindrome(self):
-    # 1. If the length of the doubly linked list is 0 or 1, then 
-    # the list is trivially a palindrome. 
-    if self.length <= 1:
-        return True
-    
-    # 2. Initialize two pointers: 'forward_node' starting at the head 
-    # and 'backward_node' starting at the tail.
-    forward_node = self.head
-    backward_node = self.tail
-    
-    # 3. Traverse through the first half of the list. We only need to 
-    # check half because we're comparing two nodes at once: one from 
-    # the beginning and one from the end.
-    for i in range(self.length // 2):
-        # 3.1. Compare the values of 'forward_node' and 'backward_node'. 
-        # If they're different, the list is not a palindrome.
-        if forward_node.value != backward_node.value:
-            return False
+    def is_palindrome(self):
+        # 1. If the length of the doubly linked list is 0 or 1, then 
+        # the list is trivially a palindrome. 
+        if self.length <= 1:
+            return True
         
-        # 3.2. Move the 'forward_node' one step towards the tail and 
-        # the 'backward_node' one step towards the head for the next iteration.
-        forward_node = forward_node.next
-        backward_node = backward_node.prev
- 
-    # 4. If we've gone through the first half of the list without 
-    # finding any non-matching node values, then the list is a palindrome.
-    return True
+        # 2. Initialize two pointers: 'forward_node' starting at the head 
+        # and 'backward_node' starting at the tail.
+        forward_node = self.head
+        backward_node = self.tail
+        
+        # 3. Traverse through the first half of the list. We only need to 
+        # check half because we're comparing two nodes at once: one from 
+        # the beginning and one from the end.
+        for i in range(self.length // 2):
+            # 3.1. Compare the values of 'forward_node' and 'backward_node'. 
+            # If they're different, the list is not a palindrome.
+            if forward_node.value != backward_node.value:
+                return False
+            
+            # 3.2. Move the 'forward_node' one step towards the tail and 
+            # the 'backward_node' one step towards the head for the next iteration.
+            forward_node = forward_node.next
+            backward_node = backward_node.prev
+    
+        # 4. If we've gone through the first half of the list without 
+        # finding any non-matching node values, then the list is a palindrome.
+        return True
         
     ###################################
 

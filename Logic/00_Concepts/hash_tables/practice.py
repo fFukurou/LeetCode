@@ -5,20 +5,16 @@ def longest_consecutive_sequence(nums): # -> O(n)
     
     for num in set1:
         if num - 1 not in set1:
-            current_sequence = 1
             current_num = num
+            current_sequence = 1
             
             while current_num + 1 in set1:
                 current_num += 1
                 current_sequence += 1
-                
+    
             longest_sequence = max(longest_sequence, current_sequence)
             
     return longest_sequence
-    
-    
-    
-    
     
     
     
@@ -27,7 +23,7 @@ def longest_consecutive_sequence(nums): # -> O(n)
 
 
 
-print( longest_consecutive_sequence([100, 4, 200, 1, 3, 2, 5]) )
+print( longest_consecutive_sequence([100, 4, 200, 1, 3, 2, 6, 6, 5, 7, -1, 0]) )
 
 
 

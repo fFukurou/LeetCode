@@ -19,9 +19,11 @@ class MaxHeap:
     def insert(self, value): # --> O(log n)
         self.heap.append(value)
         current_index = len(self.heap) - 1
-        
+        # while the index is greater than the start of the heap and the value of the index is greater than its parent's value
         while current_index > 0 and self.heap[current_index] > self.heap[self._parent(current_index)]:
+            # we swap the VALUES of the nodes
             self._swap(current_index, self._parent(current_index))
+            # then set the current_index to be in the new place
             current_index = self._parent(current_index)
             
         
@@ -33,13 +35,16 @@ class MaxHeap:
             left_index = self._left_child(index)
             right_index = self._right_child(index)
             
+            # checking if the left_index exceeds the length of the heap, and if its value is greater than the max_index
             if left_index < len(self.heap) and self.heap[left_index] > self.heap[max_index]:
                 max_index = left_index
                 
             if right_index < len(self.heap) and self.heap[right_index] > self.heap[max_index]:
                 max_index = right_index
             
+            # checks if the loop stopped running, as in, nor the left nor the right nodes are greater than the max_index reached so far
             if max_index != index:
+                # only swaps the values, not the pointers
                 self._swap(index, max_index)
                 index = max_index
             else:

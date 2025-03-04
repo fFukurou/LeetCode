@@ -1,89 +1,122 @@
-class Stack:
-    def __init__(self):
-        self.stack_list = []
-
-    def print_stack(self):
-        for i in range(len(self.stack_list)-1, -1, -1):
-            print(self.stack_list[i])
-
-    def is_empty(self):
-        return len(self.stack_list) == 0
-
-    def peek(self):
-        if self.is_empty():
-            return None
-        else:
-            return self.stack_list[-1]
-
-    def size(self):
-        return len(self.stack_list)
-
-    def push(self, value):
-        self.stack_list.append(value)
-
-    def pop(self):
-        if self.is_empty():
-            return None
-        else:
-            return self.stack_list.pop()
-
-
-
-
-##### WRITE SORT_STACK FUNCTION HERE #####
-def sort_stack(input_stack: Stack):
-    rev_stack = Stack()
-    
-    while not input_stack.is_empty():
-        temp = input_stack.pop()
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
         
-        while not rev_stack.is_empty() and rev_stack.peek() > temp:
-            input_stack.push(rev_stack.pop())
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.length = 1
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next is not None:
+                current = current.next
+            current.next = new_node
+        self.length += 1
+        return True
+    
+    def print_list(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.value)
+            temp = temp.next    
             
-        rev_stack.push(temp)
+    def make_empty(self):
+        self.head = None
+        self.length = 0
+
+    # WRITE REVERSE_BETWEEN METHOD HERE #
+    def reverse_between(self, start_index, end_index):
+        dummy = Node(0)
+        dummy.next = self.head
+        previous_node = dummy
         
-    while rev_stack.is_empty() == False:
-        input_stack.push(rev_stack.pop())
+        for _ in range(start_index):
+            previous_node = previous_node.next
+            
+        current = previous_node.next
+        
+        for _ in range(end_index -start_index):
+            node_to_move = current.next
+            current.next = node_to_move.next
+            node_to_move.next = previous_node.next
+            previous_node.next = node_to_move
+            
+        self.head = dummy.next
+        
+        
+        
+         
+    #####################################
     
-    
-##########################################
 
 
+linked_list = LinkedList(1)
+linked_list.append(2)
+linked_list.append(3)
+linked_list.append(4)
+linked_list.append(5)
 
+print("Original linked list: ")
+linked_list.print_list()
 
-my_stack = Stack()
-my_stack.push(3)
-my_stack.push(1)
-my_stack.push(5)
-my_stack.push(4)
-my_stack.push(2)
+# Reverse a sublist within the linked list
+linked_list.reverse_between(2, 4)
+print("Reversed sublist (2, 4): ")
+linked_list.print_list()
 
+# Reverse another sublist within the linked list
+linked_list.reverse_between(0, 4)
+print("Reversed entire linked list: ")
+linked_list.print_list()
 
-print("Stack before sort_stack():")
-my_stack.print_stack()
+# Reverse a sublist of length 1 within the linked list
+linked_list.reverse_between(3, 3)
+print("Reversed sublist of length 1 (3, 3): ")
+linked_list.print_list()
 
-sort_stack(my_stack)
-
-print("\nStack after sort_stack:")
-my_stack.print_stack()
-
+# Reverse an empty linked list
+empty_list = LinkedList(0)
+empty_list.make_empty()
+empty_list.reverse_between(0, 0)
+print("Reversed empty linked list: ")
+empty_list.print_list()
 
 
 """
     EXPECTED OUTPUT:
     ----------------
-    Stack before sort_stack():
-    2
-    4
-    5
-    1
-    3
-
-    Stack after sort_stack:
+    Original linked list: 
     1
     2
     3
     4
     5
-
+    Reversed sublist (2, 4): 
+    1
+    2
+    5
+    4
+    3
+    Reversed entire linked list: 
+    3
+    4
+    5
+    2
+    1
+    Reversed sublist of length 1 (3, 3): 
+    3
+    4
+    5
+    2
+    1
+    Reversed empty linked list: 
+    None
+    
 """

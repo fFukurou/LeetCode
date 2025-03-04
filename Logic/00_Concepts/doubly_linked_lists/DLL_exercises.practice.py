@@ -40,25 +40,24 @@ class DoublyLinkedList:
         
         while self.head != None and self.head.next != None:
             first_node = self.head
-            second_node = self.head.next
+            second_node = first_node.next
             
             previous_node.next = second_node
             first_node.next = second_node.next
             
-            second_node.prev = previous_node
             second_node.next = first_node
+            second_node.prev = previous_node
             first_node.prev = second_node
             
             if first_node.next != None:
                 self.head = first_node.next
                 previous_node = first_node
                 first_node.next.prev = first_node
-            
-        
-        self.head = dummy.next
+                
+        self.head =dummy.next
         if self.head != None:
             self.head.prev = None
-        
+                
             
         
     ################################

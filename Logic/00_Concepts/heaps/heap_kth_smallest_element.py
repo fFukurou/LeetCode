@@ -59,7 +59,27 @@ class MaxHeap:
 
 #### WRITE FIND_KTH_SMALLEST FUNCTION HERE ####
 def find_kth_smallest(nums, k):
-    pass
+    # Initialize a new instance of MaxHeap
+    max_heap = MaxHeap()
+ 
+    # Loop over each number in the input list
+    for num in nums:
+        # Insert the current number into the heap.
+        # The heap maintains its properties automatically
+        max_heap.insert(num)
+        
+        # If the heap size exceeds k, remove the maximum element.
+        # This keeps the heap size at k and ensures it only contains
+        # the smallest k numbers seen so far
+        if len(max_heap.heap) > k:
+            max_heap.remove()
+ 
+    # After the loop, the heap contains the smallest k numbers.
+    # The root of the heap is the kth smallest number,
+    # remove and return it as the function's result.
+    return max_heap.remove()
+
+
 ###############################################
 
 
